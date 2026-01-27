@@ -3453,7 +3453,6 @@
 	Suppose that $f : G \to \mathbb{C}$ is analytic and one--one; show that $f'(z) \neq 0$ for any $z$ in $G$.
 \end{exercise}
 
-
 \begin{proof}
 	Let $f : G \to \mathbb{C}$ be analytic and one--one, and fix a point
 	$a \in G$.  We show that $f'(a) \neq 0$.
@@ -3474,5 +3473,105 @@
 		f'(z) \neq 0 \qquad \text{for all } z \in G.
 	\]
 \end{proof}
+
+\chapter{Singularity}
+\chapter{The Maximum Modulus Theorem}
+\section*{\S1. The Maximum Principle}
+\setexercise{4}
+\begin{exercise}
+	Let $G$ be a bounded region and suppose $f$ is continuous on $\overline{G}$ and analytic on $G$. Show that if there is a constant $c \ge 0$ such that $|f(z)| = c$ for all $z$ on the boundary of $G$, then either $f$ is a constant function or $f$ has a zero in $G$.
+\end{exercise}
+\begin{proof}[Solution]
+	Let $G$ be a bounded region, and let $f$ be continuous on $\overline{G}$ and analytic on $G$. Assume that
+	\[
+		|f(z)| = c \quad \text{for all } z \in \partial G,
+	\]
+	where $c \ge 0$.
+
+	\medskip
+	\noindent
+	\textbf{Case 1: $c=0$.}
+	Then $f=0$ on $\partial G$. By the maximum modulus principle,
+	\[
+		\max_{\overline{G}} |f| = \max_{\partial G} |f| = 0,
+	\]
+	so $f \equiv 0$ on $G$, hence $f$ is constant.
+
+	\medskip
+	\noindent
+	\textbf{Case 2: $c>0$.}
+	Suppose that $f$ has no zeros in $G$. Then $|f|$ is a positive continuous function on $\overline{G}$ and is the modulus of a nonvanishing analytic function on $G$. Hence, by the minimum modulus principle,
+	\[
+		\min_{\overline{G}} |f| = \min_{\partial G} |f|.
+	\]
+	Since $|f|=c$ on $\partial G$, we get
+	\[
+		\min_{\overline{G}} |f| = c,
+	\]
+	and therefore \(|f(z)| \ge c\) for all \(z\in G\).
+
+	On the other hand, by the maximum modulus principle applied to $f$,
+	\[
+		\max_{\overline{G}} |f| = \max_{\partial G} |f| = c,
+	\]
+	so \(|f(z)| \le c\) for all \(z\in G\).
+
+	Combining the two inequalities yields \(|f(z)|=c\) for all \(z\in G\). By the maximum modulus principle (in its strong form), an analytic function whose modulus is constant on a region must be constant. Hence $f$ is constant.
+
+	\medskip
+	\noindent
+	Therefore, either $f$ is constant or $f$ has a zero in $G$.
+\end{proof}
+
+
+
+\setexercise{6}
+\begin{exercise}
+	Suppose that both $f$ and $g$ are analytic on $\overline{B(0;R)}$ with
+	\[
+		|f(z)| = |g(z)| \quad \text{for } |z| = R.
+	\]
+	Show that if neither $f$ nor $g$ vanishes in $B(0;R)$, then there is a constant $\lambda$, with $|\lambda| = 1$, such that $f = \lambda g$.
+\end{exercise}
+
+\begin{proof}[Solution]
+	Assume $f$ and $g$ are analytic on $\overline{B(0;R)}$ and satisfy $|f(z)|=|g(z)|$ for $|z|=R$. Also assume neither $f$ nor $g$ vanishes in $B(0;R)$.
+
+	Since $g$ has no zeros in $B(0;R)$, the quotient
+	\[
+		h(z):=\frac{f(z)}{g(z)}
+	\]
+	is analytic on $B(0;R)$. On the boundary $|z|=R$ we have
+	\[
+		|h(z)|=\frac{|f(z)|}{|g(z)|}=1.
+	\]
+	Because $h$ is continuous on $\overline{B(0;R)}$ and $|h|$ attains both its maximum and minimum on the boundary, the maximum modulus principle gives
+	\[
+		|h(z)|\le 1 \quad \text{for } |z|<R,
+	\]
+	and since $h$ is nonvanishing (as $f$ is also nonvanishing in $B(0;R)$), the minimum modulus principle gives
+	\[
+		|h(z)|\ge 1 \quad \text{for } |z|<R.
+	\]
+	Hence $|h(z)|\equiv 1$ throughout $B(0;R)$.
+
+	An analytic function with constant modulus on a region must be constant. Therefore $h$ is constant, say $h\equiv \lambda$, and then $|\lambda|=1$ (because $|h|=1$). Thus
+	\[
+		f=\lambda g \quad \text{on } B(0;R),
+	\]
+	and by continuity the same holds on $\overline{B(0;R)}$.
+\end{proof}
+
+
+\setexercise{7}
+\begin{exercise}
+	Let $f$ be analytic in the disk $B(0;R)$ and for $0 \le r < R$ define
+	\[
+		A(r) = \max \{ \Re f(z) : |z| = r \}.
+	\]
+	Show that unless $f$ is a constant, $A(r)$ is a strictly increasing function of $r$.
+\end{exercise}
+
+
 
 \end{document}
