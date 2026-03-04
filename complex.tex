@@ -1,4 +1,4 @@
-\documentclass[12pt, a4paper]{article}
+\documentclass[12pt, a4paper]{report}
 \usepackage{mathrsfs, amsmath,amssymb,amsthm,mathtools,setspace,graphicx,array,tikz,url}
 \usepackage{cite}
 \usepackage[hidelinks]{hyperref}
@@ -72,9 +72,12 @@
 \begin{document}
 \maketitle
 
+\tableofcontents
+
 \chapter{The Complex Number System}
 
-\section*{\S2. The field of complex numbers}
+\section{The real numbers}
+\section{The field of complex numbers}
 
 \setexercise{6}
 \begin{exercise}
@@ -114,8 +117,8 @@
 \end{proof}
 
 
-
-\section*{\S4. Polar representation and roots of complex numbers}
+\section{The complex plane}
+\section{Polar representation and roots of complex numbers}
 \setexercise{2}
 \begin{exercise}
 	Calculate the following:
@@ -173,7 +176,7 @@
 	In particular, this holds when \(z = e^{\tfrac{2\pi i}{n}}\), which is the desired case.
 \end{proof}
 
-\section*{\S5. Lines and half planes in the complex plane}
+\section{Lines and half planes in the complex plane}
 \setexercise{1}
 \begin{exercise}
 	Let $C$ be the circle $\{ z : |z - c| = r \}, \; r > 0$; let
@@ -204,7 +207,7 @@
 	\]
 \end{proof}
 
-\section*{\S6. The extended plane and its spherical representation}
+\section{The extended plane and its spherical representation}
 \setexercise{4}
 \begin{exercise}
 	Let $\Lambda$ be a circle lying in $S$. Then there is a unique plane $P$ in $\mathbb{R}^3$ such that $P \cap S = \Lambda$.
@@ -271,7 +274,7 @@
 
 \newpage
 \chapter{Metric Spaces and the Topology of $\mathbb{C}$}
-\section*{\S1. Definition and examples of metric spaces}
+\section{Definition and examples of metric spaces}
 
 \setexercise{3}
 \begin{exercise}
@@ -385,7 +388,7 @@
 	as desired.
 \end{proof}
 
-\section*{\S2. Connectedness}
+\section{Connectedness}
 \setexercise{4}
 \begin{exercise}
 	Prove the following generalization of Lemma 2.6.
@@ -461,7 +464,7 @@
 
 \end{proof}
 
-\section*{\S3. Sequences and completeness}
+\section{Sequences and completeness}
 
 \setexercise{3}
 \begin{exercise}
@@ -509,7 +512,7 @@
 	to the limit of its convergent subsequence.
 \end{proof}
 
-\section*{\S4. Compactness}
+\section{Compactness}
 
 \setexercise{4}
 \begin{exercise}
@@ -613,7 +616,7 @@
 	$\varepsilon>0$ was arbitrary, $\overline{A}$ is totally bounded.
 \end{proof}
 
-\section*{\S5. Continuity}
+\section{Continuity}
 
 \setexercise{3}
 \begin{exercise}
@@ -800,7 +803,7 @@
 	Therefore $(X,d)$ is connected.
 \end{proof}
 
-\section*{\S6. Uniform convergence}
+\section{Uniform convergence}
 
 \setexercise{1}
 \begin{exercise}
@@ -862,7 +865,7 @@
 \newpage
 
 \chapter{Elementary Properties and Example of Analytic Function}
-\section*{\S1. Power series}
+\section{Power series}
 
 \setexercise{6}
 \begin{exercise}
@@ -954,7 +957,7 @@
 	\noindent Therefore, the radius of convergence is $R = 1$, and the series converges conditionally for $z = 1$, $z = -1$, and $z = i$.
 \end{proof}
 
-\section*{\S2. Analytic functions}
+\section{Analytic functions}
 
 \setexercise{1}
 \begin{exercise}
@@ -1200,7 +1203,7 @@
 	exists on \(\mathbb{C}\setminus\{0\}\).
 \end{proof}
 
-\section*{\S3. Analytic functions as mappings, Möbius transformation}
+\section{Analytic functions as mappings, Möbius transformation}
 
 \setexercise{4}
 \begin{exercise}
@@ -1564,7 +1567,7 @@
 
 \chapter{Complex Integration}
 
-\section*{\S1. Riemann-Stieltjes integral}
+\section{Riemann-Stieltjes integral}
 
 \setexercise{6}
 \begin{exercise}
@@ -1834,7 +1837,7 @@
 \end{proof}
 
 
-\section*{\S2. Power series representation of analytic function}
+\section{Power series representation of analytic function}
 % Todo
 \setexercise{2}
 \begin{exercise}
@@ -2315,7 +2318,7 @@
 \end{proof}
 
 
-\section*{\S3. Zeros of an analytic function}
+\section{Zeros of an analytic function}
 \setexercise{1}
 \begin{exercise}
 	Let $f$ be an entire function and suppose there is a constant $M$, an $R>0$, and an integer $n\ge 1$ such that
@@ -2507,7 +2510,7 @@
 \end{proof}
 
 
-\section*{\S4. The index of a closed curve}
+\section{The index of a closed curve}
 \setexercise{3}
 \begin{exercise}
 	Let $p(z)$ be a polynomial of degree $n$ and let $R>0$ be sufficiently large so that
@@ -2658,7 +2661,7 @@
 	\]
 \end{proof}
 
-\section*{\S5. Cauchy's Theorem and Integral Formula}
+\section{Cauchy's Theorem and Integral Formula}
 \setexercise{1}
 \begin{exercise}
 	Suppose $f : G \to \mathbb{C}$ is analytic and define $\varphi : G \times G \to \mathbb{C}$ by
@@ -3119,7 +3122,7 @@
 	\label{fig:spath}
 \end{figure}
 
-\section*{\S6. The homotopic version of Cauchy's Theorem and simple connectivity}
+\section{The homotopic version of Cauchy's Theorem and simple connectivity}
 \setexercise{5}
 \begin{exercise}
 	Evaluate the integral $\displaystyle \int_{\gamma} \frac{dz}{z^{2}+1}$ where $\gamma(\theta) = 2|\cos 2\theta|\, e^{i\theta}$ for $0 \le \theta \le 2\pi$.
@@ -3447,7 +3450,7 @@
 		\{\pi k : k\in\mathbb{Z}\}.
 	\]
 \end{proof}
-\section*{\S7. Counting zeros; the Open Mapping Theorem}
+\section{Counting zeros; the Open Mapping Theorem}
 \setexercise{4}
 \begin{exercise}
 	Suppose that $f : G \to \mathbb{C}$ is analytic and one--one; show that $f'(z) \neq 0$ for any $z$ in $G$.
@@ -3475,9 +3478,416 @@
 \end{proof}
 
 \chapter{Singularity}
-\chapter{The Maximum Modulus Theorem}
-\section*{\S1. The Maximum Principle}
+\section{Classification of singularities}
 \setexercise{4}
+\begin{exercise}
+	Let
+	\[
+		f(z)=\frac{1}{z(z-1)(z-2)};
+	\]
+	give the Laurent expansion of \(f(z)\) in each of the following annuli:
+	(a) ann\((0;0,1)\);
+	(b) ann\((0;1,2)\);
+	(c) ann\((0;2,\infty)\).
+\end{exercise}
+
+\begin{proof}[Solution]
+	We start from the partial fraction decomposition
+	\[
+		f(z)=\frac{1}{z(z-1)(z-2)}
+		= \frac{1}{2z}-\frac{1}{z-1}+\frac{1}{2(z-2)}.
+	\]
+
+	We expand in powers of $z$ using geometric series formula.
+
+	%--------------------------------------------------
+	\textbf{(a) The annulus } $0<|z|<1$.
+
+	\[
+		\frac{1}{z-1}
+		= -\sum_{n=0}^{\infty} z^n,
+		\qquad
+		\frac{1}{z-2}
+		= -\frac12 \sum_{n=0}^{\infty} \left(\frac{z}{2}\right)^n.
+	\]
+	Thus
+	\[
+		f(z)=\frac12 z^{-1}
+		+ \sum_{n=0}^{\infty} z^n
+		- \frac14 \sum_{n=0}^{\infty} 2^{-n} z^n.
+	\]
+
+	Therefore the Laurent coefficients are
+	\[
+		a_{-1}=\frac12,\qquad
+		a_n = 1 - 2^{-(n+2)} \ (n\ge 0),\qquad
+		a_n=0\ (n\le -2).
+	\]
+	So
+	\[
+		f(z)=\frac12 z^{-1}
+		+ \sum_{n=0}^{\infty} \left(1-2^{-(n+2)}\right) z^{n},
+		\qquad 0<|z|<1.
+	\]
+
+	%--------------------------------------------------
+
+	\textbf{(b) The annulus } $1 < |z| < 2$.
+
+	\[
+		\frac{1}{z-1}
+		= \frac{1}{z} \frac{1}{1-\frac{1}{z}}
+		= \sum_{n=1}^{\infty} z^{-n},
+		\qquad
+		\frac{1}{z-2}
+		= -\frac12 \frac{1}{1-\frac{z}{2}}
+		= -\frac12 \sum_{n=0}^{\infty} \left(\frac{z}{2}\right)^n.
+	\]
+	Hence
+	\[
+		f(z)
+		= \frac12 z^{-1}
+		- \sum_{n=1}^{\infty} z^{-n}
+		- \frac14 \sum_{n=0}^{\infty} 2^{-n} z^{\,n}.
+	\]
+
+	The coefficients are
+
+	\[
+		a_{-1}= -\frac12,
+		\qquad
+		a_{-n} = -1 \quad (n \ge 2),
+		\qquad
+		a_n = -2^{-(n+2)} \quad (n \ge 0).
+	\]
+	Thus,
+	\[
+		f(z)
+		= -\frac12 z^{-1}
+		- \sum_{n=2}^{\infty} z^{-n}
+		- \sum_{n=0}^{\infty} 2^{-(n+2)}z^{\,n},
+		\qquad 1<|z|<2.
+	\]
+
+	%--------------------------------------------------
+	\textbf{(c) The annulus } $|z|>2$.
+
+	To apply the geometric series here, we factor out $z$ so that $|1/z|$ and $|2/z|$ are less than $1$ in the annuli.
+
+
+	\[
+		\frac{1}{z-1} = \frac{1}{z} \frac{1}{1-\frac{1}{z}}
+		= \sum_{n=1}^{\infty} z^{-n},
+		\qquad
+		\frac{1}{z-2}= \frac{1}{z} \frac{1}{1-\frac{2}{z}}
+		= \sum_{n=1}^{\infty} \frac{2^{n-1}}{z^{n}}.
+	\]
+	Hence
+	\[
+		f(z)=\frac12 z^{-1}
+		-\sum_{n=1}^{\infty} z^{-n}
+		+ \sum_{n=1}^{\infty} 2^{\,n-2} z^{-n}.
+	\]
+
+	The coefficients are
+	\[
+		a_{-1}=0,
+		\qquad
+		a_{-n}=2^{\,n-2}-1 \ (n\ge 2),
+		\qquad
+		a_n=0 \ (n\ge 0).
+	\]
+	Thus
+	\[
+		f(z)=\sum_{n=2}^{\infty} \left(2^{\,n-2}-1\right) z^{-n},
+		\qquad |z|>2.
+	\]
+\end{proof}
+
+\setexercise{15}
+\begin{exercise}
+	Let \( f \) be analytic in
+	\[
+		G = \{ z : 0 < |z - a| < r \}
+	\]
+	except that there is a sequence of poles \( \{a_n\} \) in \(G\) with \(a_n \to a\).
+	Show that for any \( \omega \in \mathbb{C} \) there exists a sequence \( \{z_n\} \subset G \) with
+	\[
+		a = \lim z_n \quad \text{and} \quad \omega = \lim f(z_n).
+	\]
+\end{exercise}
+
+\begin{proof}
+	Fix $\omega\in\mathbb C$. We show that there exists a sequence $z_n\in G$ with
+	$z_n\to a$ and $f(z_n)\to\omega$.
+
+	Suppose for contradiction that no such sequence exists. We claim that there is
+	$\delta>0$ such that
+	\begin{equation}\label{eq:omit}
+		0<|z-a|<\delta \quad\Longrightarrow\quad f(z)\neq \omega .
+	\end{equation}
+	Indeed, if \eqref{eq:omit} were false, then for each $n$ we could choose
+	$z_n\in G$ with $0<|z_n-a|<1/n$ and $f(z_n)=\omega$, which would imply
+	$z_n\to a$ and $f(z_n)\to\omega$, contradicting the assumption. Hence
+	\eqref{eq:omit} holds for some $\delta>0$.
+
+	On the punctured disk $D^*:=\{z:0<|z-a|<\delta\}$ define
+	\[
+		g(z):=\frac1{f(z)-\omega}
+	\]
+	whenever $z\neq a_n$. Then $g$ is analytic on $D^*\setminus\{a_n\}$.
+
+	\medskip
+	\noindent\textbf{Step 1: Each $a_n$ is a removable singularity of $g$.}
+	Let $a_n\in D^*$ be a pole of $f$, say of order $m\ge1$. Then there is a
+	holomorphic $h$ near $a_n$ with $h(a_n)\neq0$ such that
+	\[
+		f(z)=\frac{h(z)}{(z-a_n)^m}.
+	\]
+	Hence
+	\[
+		f(z)-\omega=\frac{h(z)-\omega(z-a_n)^m}{(z-a_n)^m},
+	\]
+	and the numerator satisfies $(h-\omega(\cdot-a_n)^m)(a_n)=h(a_n)\neq0$.
+	Therefore $f(z)-\omega$ has a pole of order $m$ at $a_n$, so $g(z)$ has a zero
+	of order $m$ at $a_n$ and extends holomorphically across $a_n$ by setting
+	$g(a_n)=0$.
+
+	Doing this for each $a_n\in D^*$, we obtain a holomorphic function (still
+	denoted $g$) on $D^*$ whose zeros include all $a_n$ in $D^*$. Since $a_n\to a$,
+	$g$ has infinitely many zeros accumulating at $a$.
+
+	\medskip
+	\noindent\textbf{Step 2: The singularity of $g$ at $a$ is essential.}
+	The point $a$ is an isolated singularity of $g$ (because $g$ is holomorphic on
+	$D^*$). It cannot be removable: if $g$ extended holomorphically to $a$, then
+	the extension would be holomorphic on a neighborhood of $a$ and vanish at
+	infinitely many points $a_n\to a$, hence would vanish identically by the
+	identity theorem, impossible since $g(z)=1/(f(z)-\omega)$ is not identically
+	zero.
+
+	It also cannot be a pole: if $a$ were a pole of order $m\ge1$, then
+	$g(z)=h(z)/(z-a)^m$ near $a$ with $h$ holomorphic and $h(a)\neq0$. But for $n$
+	large, $a_n$ lies in this neighborhood and $0=g(a_n)=h(a_n)/(a_n-a)^m$, so
+	$h(a_n)=0$ for infinitely many $a_n\to a$, forcing $h\equiv0$ near $a$ by the
+	identity theorem, contradicting $h(a)\neq0$.
+
+	Thus $a$ is neither removable nor a pole, hence it is an essential singularity
+	of $g$.
+
+	\medskip
+	\noindent\textbf{Step 3: Produce a sequence with $f(z_n)\to\omega$.}
+	By Casorati--Weierstrass (equivalently, by the fact that a function with an
+	essential singularity is unbounded on every punctured neighborhood), $g$ is
+	unbounded on each $\{0<|z-a|<1/n\}$. Hence we can choose $z_n$ such that
+	\[
+		0<|z_n-a|<\frac1n
+		\quad\text{and}\quad
+		|g(z_n)|>n.
+	\]
+	Then $z_n\to a$ and $|g(z_n)|\to\infty$, so $1/g(z_n)\to0$. But
+	\[
+		\frac1{g(z_n)} = f(z_n)-\omega,
+	\]
+	so $f(z_n)\to\omega$, contradicting the initial assumption.
+
+	Therefore for this $\omega$ there exists a sequence $z_n\in G$ with $z_n\to a$
+	and $f(z_n)\to\omega$. Since $\omega\in\mathbb C$ was arbitrary, the conclusion
+	holds for every $\omega\in\mathbb C$.
+\end{proof}
+
+
+\section{Residues}
+
+\setexercise{2}
+\begin{exercise}[c]
+	Verify the following equation:
+	\[
+		\int_{0}^{\infty} \frac{\cos(ax)}{(1+x^{2})^{2}}\, dx
+		= \frac{\pi (a+1)e^{-a}}{4}, \qquad a>0.
+	\]
+\end{exercise}
+
+\begin{proof}[Solution]
+	We want to show that for $a>0$,
+	\[
+		\int_{0}^{\infty} \frac{\cos(ax)}{(1+x^{2})^{2}}\, dx
+		= \frac{\pi (a+1)e^{-a}}{4}.
+	\]
+
+	Consider the complex-valued function
+	\[
+		f(z) = \frac{e^{iaz}}{(1+z^{2})^{2}}, \qquad a>0,
+	\]
+	and for  \(R>1\) integrate it over the semicircular contour $C_R$ in the upper half–plane,
+	consisting of the segment $[-R,R]$ on the real axis and the semicircle
+	\[
+		\gamma_R : z = Re^{it}, \quad t \in [0,\pi].
+	\]
+
+	The singularities of $f$ are at $z = i$ and $z = -i$. In the upper half–plane
+	only $z = i$ lies inside the contour, and it is a pole of order two.
+	By the residue theorem,
+	\[
+		\int_{C_R} f(z)\,dz = 2\pi i\,Res(f;i).
+	\]
+
+	\medskip
+
+	\noindent\textbf{The integral over the semicircle.}
+	We claim that
+	\[
+		\int_{\gamma_R} f(z)\,dz \longrightarrow 0 \quad \text{as } R\to\infty.
+	\]
+	On $\gamma_R$ we have $z = Re^{it}$, $t\in[0,\pi]$, hence
+	\[
+		|e^{iaz}| = \bigl|e^{iaRe^{it}}\bigr|
+		= e^{\Re(i a R e^{it})}
+		= e^{-aR\sin t} \le 1.
+	\]
+	Moreover, for $R>1$,
+	\[
+		|1+z^2|
+		= |1+R^2 e^{2it}|
+		\ge \bigl||z|^{2}-1\bigr| = R^2 - 1,
+	\]
+	so
+	\[
+		|(1+z^2)^2| \ge (R^2 - 1)^2.
+	\]
+	Therefore, for $R>1$,
+	\[
+		\sup_{z\in\gamma_R} |f(z)|
+		\le \frac{1}{(R^2-1)^2}.
+	\]
+	The length of $\gamma_R$ is $\pi R$, so
+	\[
+		\left|\int_{\gamma_R} f(z)\,dz\right|
+		\le \text{(length of $\gamma_R$)}\cdot \sup_{z\in\gamma_R}|f(z)|
+		\le \pi R \cdot \frac{1}{(R^2-1)^2}
+		\longrightarrow 0 \quad\text{as } R\to\infty.
+	\]
+	Thus
+	\[
+		\int_{-\infty}^{\infty} \frac{e^{iax}}{(1+x^{2})^{2}}\,dx
+		= 2\pi i\,Res(f;i).
+	\]
+
+	\medskip
+
+	\noindent\textbf{Residue at $z=i$.}
+	We write
+	\[
+		f(z) = \frac{e^{iaz}}{(z^2+1)^2}
+		= \frac{e^{iaz}}{(z-i)^2(z+i)^2}.
+	\]
+	Thus $z=i$ is a double pole. For a double pole at $z=i$ we have
+	\[
+		Res(f;i)
+		= \left.\frac{d}{dz}\bigl[(z-i)^2 f(z)\bigr]\right|_{z=i}
+		= \left.\frac{d}{dz}\left(\frac{e^{iaz}}{(z+i)^2}\right)\right|_{z=i}.
+	\]
+	Set
+	\[
+		g(z) = \frac{e^{iaz}}{(z+i)^2}.
+	\]
+	Then
+	\[
+		g'(z)
+		= \frac{e^{iaz}\big(ia(z+i)^2 - 2(z+i)\big)}{(z+i)^4}.
+	\]
+	So
+	\begin{align*}
+		g'(i)
+		 & = \frac{e^{iai}\big(ia(-4) - 2(2i)\big)}{16}
+		= -\frac{i}{4}(a+1)e^{-a}.
+	\end{align*}
+	Hence
+	\[
+		Res(f;i) = -\frac{i}{4}(a+1)e^{-a}.
+	\]
+
+	Thus
+	\[
+		\int_{-\infty}^{\infty} \frac{e^{iax}}{(1+x^{2})^{2}}\,dx
+		= 2\pi i\left(-\frac{i}{4}(a+1)e^{-a}\right)
+		= \frac{\pi}{2}(a+1)e^{-a}.
+	\]
+
+	\medskip
+
+	\noindent\textbf{Extracting the cosine integral.}
+	Write
+	\[
+		\int_{-\infty}^{\infty} \frac{e^{iax}}{(1+x^{2})^{2}}\,dx
+		= \int_{-\infty}^{\infty} \frac{\cos(ax)}{(1+x^{2})^{2}}\,dx
+		+ i\int_{-\infty}^{\infty} \frac{\sin(ax)}{(1+x^{2})^{2}}\,dx.
+	\]
+	The integrand of the sine term is odd, so
+	\[
+		\int_{-\infty}^{\infty} \frac{\sin(ax)}{(1+x^{2})^{2}}\,dx = 0.
+	\]
+	The integrand of the cosine term is even, hence
+	\[
+		\int_{-\infty}^{\infty} \frac{\cos(ax)}{(1+x^{2})^{2}}\,dx
+		= 2\int_{0}^{\infty} \frac{\cos(ax)}{(1+x^{2})^{2}}\,dx.
+	\]
+	Therefore,
+	\[
+		2\int_{0}^{\infty} \frac{\cos(ax)}{(1+x^{2})^{2}}\,dx
+		= \frac{\pi}{2}(a+1)e^{-a},
+	\]
+	which implies
+	\[
+		\int_{0}^{\infty} \frac{\cos(ax)}{(1+x^{2})^{2}}\,dx
+		= \frac{\pi}{4}(a+1)e^{-a},
+	\]
+	as required.
+\end{proof}
+
+\section{The Argument Principle}
+\setexercise{2}
+\begin{exercise}
+	Suppose \( f \) is analytic on \( \overline{B(0;1)} \) and satisfies
+	\( |f(z)| < 1 \) for \( |z| = 1 \).
+	Find the number of solutions (counting multiplicities) of the equation
+	\[
+		f(z) = z^{n}
+	\]
+	where \( n \) is an integer larger than or equal to \( 1 \).
+\end{exercise}
+
+\begin{proof}[Solution]
+	We seek the number of solutions of
+	\[
+		f(z) = z^{n} \qquad (n \ge 1).
+	\]
+	Rewrite this as
+	\[
+		f(z) - z^{n} = 0.
+	\]
+
+	Define
+	\[
+		h(z) = z^{n}, \qquad g(z) = f(z) - z^{n}.
+	\]
+	Both $g$ and $h$ are analytic on and inside the unit circle
+	$\gamma = \{z : |z| = 1\}$.
+
+	On $\gamma$ we have $|h(z)| = |z^{n}| = 1$, and by hypothesis
+	\[
+		|h(z) + g(z)| = |f(z)| < 1 = |h(z)|.
+	\]
+	Thus the inequality required by Rouché’s theorem holds on $\gamma$.
+	Therefore $h$ and $g$ have the same number of zeros inside $\gamma$.
+	Since $h(z) = z^{n}$ has exactly $n$ zeros in $|z| < 1$,
+	it follows that $g(z) = f(z) - z^{n}$ has exactly $n$ zeros in $|z| < 1$.
+	Thus the equation $f(z) = z^{n}$ has exactly $n$ solutions in the unit disk.
+\end{proof}
+
+\chapter{The Maximum Modulus Theorem}
+\section{The Maximum Principle}
+\setexercise{2}
 \begin{exercise}
 	Let $G$ be a bounded region and suppose $f$ is continuous on $\overline{G}$ and analytic on $G$. Show that if there is a constant $c \ge 0$ such that $|f(z)| = c$ for all $z$ on the boundary of $G$, then either $f$ is a constant function or $f$ has a zero in $G$.
 \end{exercise}
